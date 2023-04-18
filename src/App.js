@@ -1,24 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import MyComponent from './0418_1_MyComponent';
+import SassComponent from './0418_2_SassComponent';
+import StyledComponent from './0418_3_StyledComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MyComponent />
+      <SassComponent />
+      <StyledComponent />
+    </>
   );
 }
 

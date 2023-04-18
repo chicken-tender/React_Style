@@ -1,0 +1,41 @@
+@import "./styles/utils.scss";
+
+.SassComponent {
+  display: flex;
+  // .SassComponent .box 와 같음!!
+  .box {
+    background: red;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    
+    // .box와 .red를 함께 사용한다는 의미
+    &.red {
+      background: $red;
+      @include square(1);
+    }
+    &.orange {
+      background: $orange;
+      @include square(2);
+    }
+    &.yellow {
+      background: $yellow;
+      @include square(3);
+    }
+    &.green {
+      background: $green;
+      @include square(4);
+    }
+    &.blue {
+      background: $blue;
+      @include square(5);
+    }
+    &.navy {
+      background: $navy;
+      @include square(6);
+    }
+    &.purple {
+      background: $purple;
+      @include square(7);
+    }
+  }
+}
